@@ -34,7 +34,7 @@ ul {
 }
 
 .section1 {
-    height: 80vh;
+    height: 77.5vh;
     background-color: var(--black);
     display: flex;
     align-items: center;
@@ -83,15 +83,33 @@ h1:hover {
     background-color: var(--black);
 }
 
-.downBtn {
-    height: 40px;
-    width: 100px;
+.downBtn1 {
+    width: 0; 
+    background-color: black;
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right:20px solid transparent;
+            border-top: 20px solid var(--gold);
+            
+            margin: 2rem;
 }
 /*Section 2*/
+
+.downBtn2 {
+    width: 0; 
+    background-color: black;
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right:20px solid transparent;
+            border-top: 0px solid transparent;
+            border-bottom: 20px solid var(--gold);
+            margin: 2rem;
+}
 
 .section2{
     height: 100vh;
     background-color: var(--black);
+    position: relative;
 }
 
 .gold {
@@ -99,7 +117,7 @@ h1:hover {
     height: 120px;
 }
 
-#sec2 {
+#headers {
     text-align: center;
     border: #D4AF37;
     color: var(--black);
@@ -107,17 +125,25 @@ h1:hover {
 }
 
 .card {
-    margin-top: 100px;
+    margin-top: 65px;
 }
 
 .btnDiv2 {
+    position: absolute;
     padding-top: 80px;
     display: flex;
     justify-content: center;
     height: 10vh;
     background-color: var(--black);
+    bottom: 80px;
 }
 
+/* Section 3 */
+.section3{
+    height: 100vh;
+    background-color: var(--black);
+    position: relative;
+}
       @keyframes faulty-flicker {
         0% {
             opacity: 0.1;
