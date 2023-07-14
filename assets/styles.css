@@ -3,15 +3,17 @@
     --black: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 ul {
@@ -32,8 +34,7 @@ ul {
 }
 
 .section1 {
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
     background-color: var(--black);
     display: flex;
     align-items: center;
@@ -63,8 +64,58 @@ ul {
     animation: faulty-flicker 2s linear infinite;
 }
 
-.headers h1:hover {
-       
+h1 span:hover {
+   color: var(--gold);
+   animation: none;
+   opacity: 100%;
+}
+
+h1:hover {
+   color: var(--gold);
+   animation: none;
+   opacity: 100%;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: var(--black);
+}
+
+.downBtn {
+    height: 40px;
+    width: 100px;
+}
+/*Section 2*/
+
+.section2{
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.gold {
+    background-color: var(--gold);
+    height: 120px;
+}
+
+#sec2 {
+    text-align: center;
+    border: #D4AF37;
+    color: var(--black);
+    font-size: 90px;
+}
+
+.card {
+    margin-top: 100px;
+}
+
+.btnDiv2 {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: var(--black);
 }
 
       @keyframes faulty-flicker {
