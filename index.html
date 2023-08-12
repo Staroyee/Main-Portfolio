@@ -1,85 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>D.M Portfolio</title>
 </head>
+
 <body>
-    
-    <section>
-    <nav id="home" class="cssNav navbar navbar-expand-lg navbar-light bg-gold">
-        <a class="navbar-brand" >Daniel Masefield</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#home">Home <span></a>
-            <a class="nav-item nav-link" href="#about-me">About Me</a>
-            <a class="nav-item nav-link" href="#work">Work</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
+  <nav id="home" class="navbar navbar-expand-lg navbar-light bg-gold">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Daniel Masefield</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-warning" href="#aboutMe">About Me</a>
+          <a class="nav-link text-warning" href="#myWork">My Work</a>
+          <a class="nav-link text-warning" href="#contact">Contact</a>
         </div>
-      </nav>
-</section>
-      <section class="row">
-      <div class="col-12 section1 headers">
-        <h1 class="faulty-letter">FULL ST<span class="faulty-letter">A</span>CK WEB DEVELOPER</h1>
       </div>
-      <div class="col-12 btnDiv">
-        <a href="#sec2"><button class="downBtn1"></button></a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="col-12 section1">
+      <h1 class="faulty-letter headers">FULL ST<span class="faulty-letter">A</span>CK WEB DEVELOPER</h1>
+    </div>
+    <div class="col-12 btnDiv">
+      <a href="#sec2"><button class="downBtn1"></button></a>
+    </div>
+  </section>
+
+  <section class="section2" id="aboutMe">
+    <div id="sec2" class="col-12 btnDiv">
+      <a href="#home"><button class="downBtn2"></button></a>
+    </div>
+    <div class="container">
+      <div class="row gold">
+        <div class="col-12 ">
+          <h1 class="secHeaders">ME</h1>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="card mx-auto">
+      <img src="./assets/images/avatar.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text text-warning" style="text-align: center;">Driven Full stack web developer with a passion for
+          crafting innovative and efficient digital solutions featuring mobile first designs.Strengths in creativity,
+          teamwork, leadership and building projects from ideation to execution. </p>
+      </div>
+    </div>
+    <div class="col-12 btnDiv2">
+      <a href="#sec3"><button class="downBtn1"></button></a>
+    </div>
+  </section>
 
-    <section class="section2">
-        <div id="sec2" class="col-12 btnDiv">
-            <a href="#home"><button class="downBtn2"></button></a>
-          </div>
-        <div class="gold">
-            <h1 id="headers">ME</h1>
-        </div>  
-        <div class="card mx-auto" style="width: 30%;">
-  <img src="./assets/images/avatar.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<div class="col-12 btnDiv2">
-    <a href="#sec3"><button class="downBtn1"></button></a>
-  </div>
-    </section>
-
-    <section class="section3">
-        <div id="sec3" class="col-12 btnDiv">
-            <a href="#sec2"><button class="downBtn2"></button></a>
-          </div>
-        <div class="gold">
-            <h1 id="headers">MY WORK</h1>
+  <section class="section3" id="myWork">
+    <div id="sec3" class="col-12 btnDiv">
+      <a href="#sec2"><button class="downBtn3"></button></a>
+    </div>
+    <div class="container">
+      <div class="row gold">
+        <div class="col-12 ">
+          <h1 class="secHeaders">MY WORK</h1>
         </div>
-        <div class="carousel"></div>
-    </section>
+      </div>
+    </div>
+    <div class="ctr-accordion">
+      <div class="tab">
+        <a href="https://github.com/Staroyee/Project-Movie-Multiverse"><img src="assets/images/movie.JPG"></a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/Staroyee/Daniel-readme-generator"><img src="assets/images/readme.JPG"></a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/Staroyee/daniel-weather-dashboard"><img src="assets/images/weather.JPG"></a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/Staroyee/Daniel-work-day-scheduler"><img src="assets/images/scheduler.JPG"></a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/Staroyee/JS-Password-Generator"><img src="assets/images/password.JPG"></a>
+      </div>
+      <div class="tab">
+        <a href="https://github.com/Staroyee/Daniel-Quiz"><img src="assets/images/quiz.JPG"></a>
+      </div>
+    </div>
+    <div class="col-12 btnDiv2">
+      <a href="#sec4"><button class="downBtn1"></button></a>
+    </div>
+  </section>
 
-    <section class="section4">
-        <div class="gold">
-            <h1 id="headers">CONTACT</h1>
+  <section class="section4" id="contact">
+    <div id="sec4" class="container">
+      <div class="row gold">
+        <div class="col-12 ">
+          <h1 class="secHeaders">CONTACT</h1>
         </div>
-        <div>
-            <ul>
-                <a href="">
-                    <li></li>
-                </a>
-                <a href="">
-                    <li></li>
-                </a>
-                <a href="">
-                    <li></li>
-                </a>
-            </ul>
-        </div>
-    </section>
-
+      </div>
+    </div>
+    <div>
+      <div class="divP">
+        <p class="contactP">Please feel free to contact me via the methods listed below.</p>
+      </div>
+      <ul class="link-list">
+        <a class="href" href=mailto:"staroyee@gmail.com" target="_blank">
+          <li class="links">staroyee@gmail.com</li>
+        </a>
+        <a class="href" href="https://www.linkedin.com/in/danielmasefield03" target="_blank">
+          <li class="links">LinkedIn</li>
+        </a>
+        <a class="href" href="https://github.com/Staroyee" target="_blank">
+          <li class="links">GitHub</li>
+        </a>
+      </ul>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

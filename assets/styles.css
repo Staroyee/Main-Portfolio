@@ -1,5 +1,5 @@
 :root {
-    --gold: #D4AF37;
+    --gold: #FFC107;
     --black: black;
 }
 
@@ -14,26 +14,53 @@ html {
 
 body {
     height: 100%;
+    background-color: var(--black);
 }
 
 ul {
     list-style-type: none;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 .navbar {
+    position: relative;
     background-color: var(--gold);
     display: flex;
     height: 115px;
     align-items: center;
     padding: 30px;
-    justify-content:
+    z-index: 50;
 }
 
 .navbar-brand {
     font-size: 30px;
 }
 
+.nav-link {
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #635119;
+}
+
+.navbar-nav {
+    background-color: var(--black);
+    width: 30%;
+    float: right;
+    border: solid 1px var(--gold);
+    border-radius: 10px;
+}
+
 .section1 {
+    z-index: 20;
+    position: relative;
     height: 77.5vh;
     background-color: var(--black);
     display: flex;
@@ -43,17 +70,11 @@ ul {
 
 .headers {
     text-align: center;
-}
-
-
-
-.headers h1 {
     margin: 100px;
     border: #D4AF37;
     color: var(--gold);
     padding: 40px;
     font-size: 90px;
-    cursor: pointer;
     border: 0.15em solid var(--glow-color);
     border-radius: 0.45em;
     animation: text-flicker 3s linear infinite;
@@ -64,18 +85,6 @@ ul {
     animation: faulty-flicker 2s linear infinite;
 }
 
-h1 span:hover {
-   color: var(--gold);
-   animation: none;
-   opacity: 100%;
-}
-
-h1:hover {
-   color: var(--gold);
-   animation: none;
-   opacity: 100%;
-}
-
 .btnDiv {
     display: flex;
     justify-content: center;
@@ -84,138 +93,260 @@ h1:hover {
 }
 
 .downBtn1 {
-    width: 0; 
+    width: 0;
     background-color: black;
-            height: 0; 
-            border-left: 20px solid transparent;
-            border-right:20px solid transparent;
-            border-top: 20px solid var(--gold);
-            
-            margin: 2rem;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 20px solid var(--gold);
+    margin: 2rem;
 }
+
 /*Section 2*/
 
 .downBtn2 {
-    width: 0; 
+    width: 0;
     background-color: black;
-            height: 0; 
-            border-left: 20px solid transparent;
-            border-right:20px solid transparent;
-            border-top: 0px solid transparent;
-            border-bottom: 20px solid var(--gold);
-            margin: 2rem;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 20px solid var(--gold);
+    margin: 2rem;
 }
 
-.section2{
+.section2 {
     height: 100vh;
     background-color: var(--black);
     position: relative;
 }
 
 .gold {
-    background-color: var(--gold);
+    background-color: var(--black);
+    border-top: solid 1px var(--gold);
+    border-bottom: solid 1px var(--gold);
     height: 120px;
+    border-radius: 30px;
 }
 
-#headers {
-    text-align: center;
-    border: #D4AF37;
-    color: var(--black);
+.secHeaders {
+    color: var(--gold);
     font-size: 90px;
+    text-align: center;
 }
 
 .card {
     margin-top: 65px;
+    width: 30%;
+    background-color: var(--black);
+    border: solid 1px var(--gold);
 }
 
 .btnDiv2 {
     position: absolute;
-    padding-top: 80px;
     display: flex;
     justify-content: center;
     height: 10vh;
     background-color: var(--black);
-    bottom: 80px;
+    bottom: 0px;
 }
 
 /* Section 3 */
-.section3{
+.downBtn3 {
+    width: 0;
+    background-color: black;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 20px solid var(--gold);
+    margin: 2rem;
+}
+
+.section3 {
     height: 100vh;
     background-color: var(--black);
     position: relative;
 }
-      @keyframes faulty-flicker {
-        0% {
-            opacity: 0.1;
-        }
-        2% {
-            opacity: 0.1;
-        }
-        4% {
-            opacity: 0.5;
-        }
-        19% {
-            opacity: 0.5;
-        }
-        21% {
-            opacity: 0.1;
-        }
-        23% {
-            opacity: 1;
-        }
-        80% {
-            opacity: 0.5;
-        }
-        83% {
-            opacity: 0.4;
-        }
-    
-        87% {
-            opacity: 1;
-        }
+
+.btnDiv3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: var(--black);
+    bottom: 0px;
+}
+
+/* Section 4 */
+.section4 {
+    background-color: var(--black);
+    position: relative;
+}
+
+.divP {
+    margin: 0px 50px;
+    padding: 30px 0px 10px 0px;
+    border-bottom: solid 1px var(--gold);
+    text-align: center;
+}
+
+.contactP {
+    color: var(--gold);
+}
+
+.link-list {
+    padding: 0px;
+    text-align: center;
+}
+
+.links {
+    padding: 30px 0px 30px 0px;
+}
+
+.href {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: #D4AF37;
+}
+
+.ctr-accordion {
+    max-width: 1330px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+    margin: 80px auto;
+}
+
+.tab {
+    position: relative;
+    width: 20%;
+    height: inherit;
+    padding: 20px;
+    background: #FFC107;
+    cursor: pointer;
+    transition: width .5s ease;
+    border-radius: 25px;
+    border: solid 1px var(--gold);
+}
+
+.tab img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    border-radius: 25px;
+}
+
+.tab:hover img {
+    opacity: 0.6;
+}
+
+.tab:hover {
+    width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@keyframes faulty-flicker {
+    0% {
+        opacity: 0.1;
     }
 
-      @keyframes text-flicker {
-        0% {
-            opacity: 0.1;
-        }
-    
-        2% {
-            opacity: 1;
-        }
-    
-        8% {
-            opacity: 0.1;
-        }
-    
-        9% {
-            opacity: 1;
-        }
-    
-        12% {
-            opacity: 0.1;
-        }
-        20% {
-            opacity: 1;
-        }
-        25% {
-            opacity: 0.3;
-        }
-        30% {
-            opacity: 1;
-        }
-    
-        70% {
-            opacity: 0.7;
-        }
-        72% {
-            opacity: 0.2;
-        }
-    
-        77% {
-            opacity: 0.9;
-        }
-        100% {
-            opacity: 0.9;
-        }
+    2% {
+        opacity: 0.1;
     }
+
+    4% {
+        opacity: 0.5;
+    }
+
+    19% {
+        opacity: 0.5;
+    }
+
+    21% {
+        opacity: 0.1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    83% {
+        opacity: 0.4;
+    }
+
+    87% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
